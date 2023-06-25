@@ -91,6 +91,7 @@ def cosine_similarity(x, y):
 def create_fold_spectrograms():
     print(audio_dir)
     for audio_file in os.listdir(audio_dir):
+        print(audio_file)
         temp_audio_file = os.path.join(audio_dir, audio_file)
         samples, sample_rate = librosa.load(temp_audio_file)
         fig = plt.figure(figsize=[0.72, 0.72])
