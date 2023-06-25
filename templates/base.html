@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PSWD</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+
+    <!--
+<link href="{{ url_for('static', filename='img/cute.jpeg') }}" rel="icon">
+<img src="{{ url_for('static', filename='img/cute.jpeg') }}" alt="Cute Image">
+   -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/animate/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/owlcarousel/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/lightbox/css/lightbox.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</head>
+
+<!--
+
+ <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <img src="{{ url_for('static', filename='img/cute.jpeg') }}" alt="Cute Image">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link href="css/style.css" rel="stylesheet">
+
+
+-->
+
+
+
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0">Pseudostem Weevil Detector</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#work" class="nav-item nav-link">Work</a>
+                <a href="#team" class="nav-item nav-link">Team</a>
+
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div class="container-fluid px-0 mb-5" id="home">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{{ url_for('static', filename='img/cute.jpeg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-4 text-black">WELCOME</p>
+                                    <h1 class="display-1 text-black mb-5 animated slideInRight">Detect My Presence In
+                                        Banana Plant</h1>
+
+
+
+                                    <div class="container">
+                                        <a href=""
+                                            class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">
+                                            {% block content %}
+
+                                            <!--  MAIN BODY HERE       -->
+
+                                            {% endblock %}
+                                        </a>
+                                    </div>
+
+
+                                    <!--
+                                         <a href="" style="color:black">
+                                        <p>detect presence of other species</p>
+                                        </a>
+                                    -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">PSW</h1>
+                                <small class="fs-5 fw-bold">Images</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="{{ url_for('static', filename='img/lar.jpeg') }}">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="{{ url_for('static', filename='img/weevil.jpeg') }}">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="{{ url_for('static', filename='img/a.jpeg') }}">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3 " id="about">About Our Project</p>
+                    <h1 class="mb-4">About Our Pseudo Stem Weevil Detector</h1>
+                    <p class="mb-4">Through this project, we help you identify whether your Banana plant is infected
+                        with PSW (Pseudo Stem Weevil).</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="{{ url_for('static', filename='img/user.jpeg') }}" alt="">
+                            <h5 class="mb-3">User Friendly</h5>
+                            <span>We provide a user Guide ("HOW IT WORKS") session to help farmers.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="{{ url_for('static', filename='img/acc.jpeg') }}" alt="">
+                            <h5 class="mb-3">Accurate Result</h5>
+                            <span>This will give more accurate result</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5"
+                        href="{{ url_for('static', filename='img/PSWD_DemoVideo.mp4') }}">User Guide(Video)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Works</p>
+                    <h1 class="mb-4" id="work">Our Journey</h1>
+                    <p class="mb-4">Innovation, Discovery, Growth, Impactful, Collaboration</p>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="{{ url_for('static', filename='img/sur.jpeg') }}"
+                                        alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">20</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Surveyed 20 peoples</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="{{ url_for('static', filename='img/aud.jpeg') }}"
+                                        alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">3000</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Trained Audio dataset</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">PSW</p>
+                <h1 class="mb-5">These are related to PSW</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/lar.jpeg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-1.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Best Animal Selection</h4>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/service-2.jpg" alt="">
+                            </div>
+                            <h5 class="mb-3">Breeding & Veterinary</h5>
+                            <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>-->
+
+
+
+
+
+
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Team</p>
+                <h1 class="mb-5" id="team">Meet Our Team</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="{{ url_for('static', filename='img/team-1.jpg') }}"
+                            alt="">
+                        <h5>Nayana P</h5>
+                        <p class="text-primary">S6 CSE Roll no:02</p>
+                        <div class="d-flex justify-content-center">
+
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="{{ url_for('static', filename='img/team-2.jpg') }}"
+                            alt="">
+                        <h5>Annie Treasa Sabu</h5>
+                        <p class="text-primary">S6 CSE Rollno:16</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="{{ url_for('static', filename='img/team-3.jpg') }}"
+                            alt="">
+                        <h5>Anuranjana Rajeev</h5>
+                        <p class="text-primary">S6 CSE Roll no:18</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded p-4">
+                        <img class="img-fluid rounded mb-4" src="{{ url_for('static', filename='img/team-3.jpg') }}"
+                            alt="">
+                        <h5>Navya S Raj</h5>
+                        <p class="text-primary">S6 CSE Roll no:50</p>
+                        <div class="d-flex justify-content-center">
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-square btn-outline-secondary rounded-circle mx-1" href=""><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s" id="contact">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">CONTACT US....</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rajiv Gandhi Institute of
+                        Technology,Kottayam</p>
+
+                    <a>
+                        <p class="mb-2"><i class="fa fa-envelope me-3" href="pswd20232gmail.com"></i>pswd2023@gmail.com
+                        </p>
+                    </a>
+                    <div class="d-flex pt-3">
+
+                        <a class="btn btn-square btn-secondary rounded-circle me-2"
+                            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=video&cd=&cad=rja&uact=8&ved=2ahUKEwjpoPLDuL3_AhWUa2wGHQVgApsQtwJ6BAgGEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DNObO9HADv7g&usg=AOvVaw2M18a8fcS4SGBOD8hGOVbe"><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/owlcarousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/counterup/counterup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/parallax/parallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/lightbox/js/lightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+
+</html>
